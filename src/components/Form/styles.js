@@ -5,9 +5,11 @@ const Styles = StyleSheet.create({
         width: "100%",
         height: "100%",
         bottom: 0,
+        justifyContent: 'space-around',
         backgroundColor: '#FFF',
         alignItems: 'center',
-        marginTop: 30,
+        marginTop: 20,
+        paddingTop: 15,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30
     },
@@ -49,6 +51,13 @@ const Styles = StyleSheet.create({
     textButtonCalc: {
         fontSize: 20,
         color: '#FFF'
+    },
+
+    errorMessage: {
+        color: 'red',
+        fontWeight: 'bold',
+        fontSize: 12,
+        paddingLeft: 20
     }
 })
 

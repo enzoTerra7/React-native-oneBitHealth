@@ -1,10 +1,28 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity, Share } from 'react-native'
 import Styles from './styles'
 
 export default function ResultIMC(props) {
+
+    const onShare = async () => {
+        const Result = await Share.share({
+            message: `Meu IMC hoje é de: ${props.result}`
+        })
+    }
+
     return (
         <View style={Styles.resultImcContainer}>
+            {props.result && (
+                <View style={Styles.shareButtonContainer}>
+                    <TouchableOpacity
+                        onPress={() => onShare()}
+                    >
+                        <Text style={Styles.shareButton}>
+                            Compartilhar
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+            )}
             <Text style={Styles.informs}>
                 {props.message}
             </Text>
