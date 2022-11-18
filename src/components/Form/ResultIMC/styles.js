@@ -2,12 +2,9 @@ import { StyleSheet } from 'react-native';
 
 const Styles = StyleSheet.create({
     resultImcContainer: {
-        flex: 1,
-        marginTop: 20,
-        paddingTop: 60,
+        marginTop: 5,
         borderRadius: 50,
         alignItems: 'center',
-        width: '100%',
         fontSize: 48,
         color: "#FF0043",
         fontWeight: "bold"
@@ -27,7 +24,7 @@ const Styles = StyleSheet.create({
 
     shareButtonContainer: {
         width: '70%',
-        backgroundColor: '#1877f2',
+        backgroundColor: '#1877fe',
         borderRadius: 50,
         padding: 10,
         marginBottom: 35
